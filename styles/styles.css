@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*Colors*/
+
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #333;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 5px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-control label {
+    font-size: 1.2rem;
+}
+
+.form-control input {
+    margin-top: 0.5rem;
+}
+
+#card-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    max-width: 500px;
+}
+
+.btn-primary {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very-dark-violet);
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+
+}
+
+.btn-primary:hover {
+    background-color: var(--Dark-grayish-violet);
+}
+
+
+#completed-state {
+    display: none;
+}
+
+#completed-state.active {
+    display: block;
+}
+
+.completed-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
