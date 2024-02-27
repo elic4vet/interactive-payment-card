@@ -20,6 +20,10 @@ body {
     font-size: 18px;
     align-items: center;
     min-height: 100vh;
+    background-image: url('../images/bg-main-desktop.png');
+    background-repeat: no-repeat;
+    background-size:600px;
+    background-position:left;
 }
 
 input {
@@ -35,6 +39,18 @@ input {
 a {
     text-decoration: none;
     color: #333;
+}
+
+.frontCard {
+    position: relative;
+    left: -900px;
+    display: none;
+}
+.backCard {
+    position: relative;
+    left: -800px;
+    margin-top: 2rem;
+    display: none;
 }
 
 .row {
@@ -95,8 +111,6 @@ div .row .second {
     width: 100%;
 }
 
-
-
 .form-control label {
     font-size: 1.2rem;
 }
@@ -116,8 +130,8 @@ div .row .second {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2rem;
-    width: 600px;
+    padding: 0 2rem;
+    width: 800px;
 }
 
 .btn-primary {
@@ -138,7 +152,6 @@ div .row .second {
     background-color: var(--Dark-grayish-violet);
 }
 
-
 #completed-state {
     display: none;
 }
@@ -154,6 +167,8 @@ div .row .second {
     justify-content: center;
     margin-top: 2rem;
 }
+
+
 
 .attribution {
     font-size: 18px;
