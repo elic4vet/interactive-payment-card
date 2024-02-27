@@ -18,7 +18,6 @@
 
 <body>
   <div class="container">
-    <form id="card-form">
       <div class="row first">
         <div class="col-md-6">
           <div class="form-group">
@@ -27,7 +26,7 @@
               placeholder="Jane Appleseed" required>
           </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="form-group">
             <label for="card-number">Card number</label>
             <input type="text" class="form-control" id="card-number" name="card-number"
@@ -52,24 +51,18 @@
 
         <div class="col">
           <div class="form-group">
-            <label for="cvv">CVC </label>
+            <label for="cvv">CVC</label>
             <input type="text" class="form-control" id="cvv" name="cvc" placeholder="e.g. 123" required>
           </div>
         </div>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
   </div>
-
-
-
-
-
   <!-- Completed state start -->
   <div id="completed-state">
     <img src="./images/icon-check.svg" alt="checkmark icon">
     <h2>Payment successful</h2>
-    <p>e've added your card details
+    <p>we've added your card details
       <span id="cardholder-name-completed"></span>
     </p>
     <button>Continue</button>
