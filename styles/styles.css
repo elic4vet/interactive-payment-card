@@ -10,14 +10,17 @@
     --Dark-grayish-violet: hsl(279, 6%, 55%);
     --Very-dark-violet: hsl(278, 68%, 11%);
     --light-fuchsia:#C84DCF;
+
+    /*Fonts*/
+    --main-f-family:"Space Grotesk", sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-f-family);
     background-color: #fff;
     color: #333;
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 16px;
     align-items: center;
     min-height: 100vh;
     background-image: url('../images/bg-main-desktop.png');
@@ -41,6 +44,12 @@ a {
     color: #333;
 }
 
+label {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+}
 .frontCard {
     position: relative;
     left: -900px;
@@ -53,49 +62,32 @@ a {
     display: none;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
-    width: 100%;
-}
-
 .col-md-6 {
     width: 100%;
 }
-
-.col{
-    width: 100%;
-}
-
+ 
 .first {
     display: flex;
     flex-direction: column;
 }
 
-.second {
+#secondRow {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    margin-top: 2rem;
-    width: 100%;
-    margin-bottom: 2rem;
-}
-div .row .second {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-    width: 100%;
-    margin-bottom: 2rem;
 }
 
+
+#secondRow #yy {
+    margin-top: 2rem;
+}
+ 
 .form-group {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
     justify-content: center;
     margin-top: 2rem;
     width: 100%;
@@ -103,12 +95,6 @@ div .row .second {
 
 .form-control {
     border-color: 1px solid var(--Very-dark-violet);
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-    margin-top: 0.5rem;
-    width: 100%;
 }
 
 .form-control label {
@@ -132,6 +118,7 @@ div .row .second {
     justify-content: center;
     padding: 0 2rem;
     width: 800px;
+    justify-content: center;
 }
 
 .btn-primary {
@@ -144,12 +131,35 @@ div .row .second {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 100%;
 }
 
 .btn-primary:hover {
     background-color: var(--Dark-grayish-violet);
+}
+
+#mm, #yy{
+
+    width: 80px;
+}
+
+#cvc {
+    width: 100px;
+}
+
+input .form-group {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0 auto;
+}
+
+.first, .second , .third {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin: 0 auto;
 }
 
 #completed-state {
@@ -168,16 +178,15 @@ div .row .second {
     margin-top: 2rem;
 }
 
-
-
 .attribution {
     font-size: 18px;
     text-align: center;
     margin-top: 2rem;
+    color: var(--Dark-violet);
 }
 
 .attribution a {
-    color: var(--Very-dark-violet)
+    color: var(--light-fuchsia)
 }
 
 
