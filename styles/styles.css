@@ -64,31 +64,34 @@ label {
 
 .col-md-6 {
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
  
 .first {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
 }
 
 #secondRow {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
 }
 
 
 #secondRow #yy {
     margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: -40px;
 }
  
 .form-group {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 0 auto;
-    justify-content: center;
+    align-items: space-between;
     margin-top: 2rem;
     width: 100%;
 }
@@ -108,16 +111,18 @@ label {
 #card-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 2rem;
+    width: 500px;
 }
 
+
 .container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0 2rem;
-    width: 800px;
     justify-content: center;
 }
 
@@ -155,12 +160,6 @@ justify-content: space-between;
 margin: 0 auto;
 }
 
-.first, .second , .third {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    margin: 0 auto;
-}
 
 #completed-state {
     display: none;
