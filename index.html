@@ -18,65 +18,74 @@
 
 <body>
   <div class="container">
-    <img src="./images/card-logo.svg" alt="Card logo" class="logo">
-    <img src="./images/bg-card-front.png" alt="Close icon" class="frontCard">
-    <img src="./images/bg-card-back.png" alt="Back arrow" class="backCard">
-    <form id="card-form">
-      <div class="row first">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="cardholder-name">Cardholder name</label>
-            <input type="text" class="form-control" id="cardholder-name" name="cardholder-name"
-              placeholder="Jane Appleseed" required>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label for="card-number">Card number</label>
-            <input type="text" class="form-control" id="card-number" name="card-number"
-              placeholder="e.g. 1234 5678 9123 0000" required>
-          </div>
-        </div>
+    <section id="s1">
+      <div class="frontCard"> 
       </div>
-
-      <div id="secondRow">
-        <div class="firstCol">
-          <div class="form-group">
-            <label for="mm">Expiry date (MM/YY)</label>
-            <input type="text" class="form-control" id="mm" name="mm" placeholder="MM" required>
+      <div class="backCard"> </div>
+    </section>
+    <section id="s2">
+        <div class="row first">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="cardholder-name">Cardholder name</label>
+              <input type="text" class="form-control" id="cardholder-name" name="cardholder-name"
+                placeholder="Jane Appleseed" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="card-number">Card number</label>
+              <input type="text" class="form-control" id="card-number" name="card-number"
+                placeholder="e.g. 1234 5678 9123 0000" required>
+            </div>
           </div>
         </div>
-        <div class="secondCol">
-          <div class="form-group">
-            <input type="text" class="form-control" id="yy" name="yy" placeholder="YY" required>
+
+        <div id="secondRow">
+          <div class="firstCol">
+            <div class="form-group">
+              <label for="mm">Expiry date (MM/YY)</label>
+              <input type="text" class="form-control" id="mm" name="mm" placeholder="MM" required>
+            </div>
+          </div>
+          <div class="secondCol">
+            <div class="form-group">
+              <input type="text" class="form-control" id="yy" name="yy" placeholder="YY" required>
+            </div>
+          </div>
+
+          <div class="thirdCol">
+            <div class="form-group">
+              <label for="cvv">CVC</label>
+              <input type="text" class="form-control" id="cvc" name="cvc" placeholder="e.g. 123" required>
+            </div>
           </div>
         </div>
 
-        <div class="thirdCol">
-          <div class="form-group">
-            <label for="cvv">CVC</label>
-            <input type="text" class="form-control" id="cvc" name="cvc" placeholder="e.g. 123" required>
-          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> <br>
+          Coded by <a href="#" target="_blank">Elisabeth Erkekoglou</a>.
         </div>
-      </div>
 
-      <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
-  <!-- Completed state start -->
-  <div id="completed-state">
-    <img src="./images/icon-check.svg" alt="checkmark icon">
-    <h2>Payment successful</h2>
-    <p>we've added your card details
-      <span id="cardholder-name-completed"></span>
-    </p>
-    <button>Continue</button>
   </div>
+
+  </section>
+
+  <section id="s3">
+    <!-- Completed state start -->
+    <div id="completed-state">
+      <img src="./images/icon-check.svg" alt="checkmark icon">
+      <h2>Payment successful</h2>
+      <p>we've added your card details
+        <span id="cardholder-name-completed"></span>
+      </p>
+      <button>Continue</button>
+    </div>
+  </section>
   <!-- Completed state end -->
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#" target="_blank">Elisabeth Erkekoglou</a>.
-  </div>
+
+
 </body>
 
 </html>
