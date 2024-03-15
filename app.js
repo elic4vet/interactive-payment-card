@@ -9,11 +9,11 @@ const elements = {
     },
     expiracyMonth: {
         input: document.querySelector("#mm"),
-        text: document.querySelector(".expiracy__date")
+        text: document.querySelector(".expiracy__month")
     },
     expiracyYear: {
         input: document.querySelector("#yy"),
-        text: document.querySelector(".expiracy__date")
+        text: document.querySelector(".expiracy__year")
     },
     cvcCode: {
         input: document.querySelector("#cvc"),
