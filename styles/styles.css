@@ -89,6 +89,38 @@ label {
     background-size: 90%;
     height: 300px;
     margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_details {
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.frontCard p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.expiracy__year p {
+    margin-left: 0px;
+}
+
+.expiracy_date {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.backCard p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 500px;
+    margin-top: 130px;
 }
 
 .backCard {
@@ -222,6 +254,7 @@ input .form-group {
 .attribution a {
     color: var(--light-fuchsia)
 }
+
 
 
 /* Media Queries */
