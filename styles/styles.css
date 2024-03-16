@@ -82,6 +82,16 @@ label {
 }
 
 /* Card Details */
+
+.cardLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
 .frontCard {
     background-image: url('../images/bg-card-front.png');
     background-repeat: no-repeat;
@@ -93,13 +103,13 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .card__number {
     font-size: 23px;
     letter-spacing: 2px;
-    margin-top: 80px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -119,8 +129,6 @@ label {
 }
  
 .frontCard p {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -132,7 +140,7 @@ label {
     display: flex;
     flex-direction: row;
     position: relative;
-    top: -35px;
+    top: -39px;
     left: 360px;
     font-size: 14px;
     letter-spacing: 2px;
@@ -153,6 +161,7 @@ label {
     margin-right: -200px;
     background-size: 70%;
     height: 300px;
+    border-radius: 15px;
 }
 
 /* Col */ 
