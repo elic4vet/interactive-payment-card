@@ -71,10 +71,7 @@ label {
 }
 
 #s3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: none;
     margin-top: 2rem;
     color: var(--White);
     padding: 1rem;
