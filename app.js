@@ -98,12 +98,11 @@ function validateForm() {
     }
 
     return true;
-
 }
 
 document.querySelector(".submit").addEventListener("click", (event) => {
     event.preventDefault();
-    
+
     // Validate each input field
     const isValidCardNumber = validateCardNumber(elements.cardNumber.input.value);
     const isValidCardHolderName = validateCardHolderName(elements.cardHolderName.input.value);
@@ -133,15 +132,13 @@ document.querySelector(".submit").addEventListener("click", (event) => {
 
     // Check if any fields are invalid
     if (invalidFields.length === 0) {
-         // Display the element with ID 's3'
+        // Display the element with ID 's3'
         document.getElementById('s3').style.display = 'block';
 
     } else {
         // Display error message listing invalid fields
         alert("Please check the entered information for correctness. Invalid fields: " + invalidFields.join(", "));
     }
-
-
 });
 
 
