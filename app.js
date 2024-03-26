@@ -25,6 +25,7 @@ const elements = {
         initialText: document.querySelector(".cvc__text").textContent
     }
 };
+document.getElementById('completed-state').style.display = 'none';
 
 function updateTextContent(inputElement, textElement, initialText) {
     if (inputElement.value.trim() === '') {
@@ -74,6 +75,7 @@ function validateForm() {
     if (!validateCardNumber(cardNumber)) {
         alert("Invalid card number");
         return true;
+        
     }
 
     if (!validateCardHolderName(cardHolderName)) {
@@ -111,7 +113,7 @@ document.querySelector(".submit").addEventListener("click", (event) => {
 
     // Array to hold names of fields that failed validation
     const invalidFields = [];
-
+ 
     // Check each field and collect invalid fields
     if (!isValidCardNumber) {
         invalidFields.push("Card Number");
@@ -140,6 +142,16 @@ document.querySelector(".submit").addEventListener("click", (event) => {
         alert("Please check the entered information for correctness. Invalid fields: " + invalidFields.join(", "));
     }
 });
+
+
+document.querySelector(".continue").addEventListener("click", (event) => {
+    event.preventDefault();
+    // Hide the element with ID 's3'
+    document.getElementById('completed-state').style.display = 'none';
+    // Display the element with ID 's2'
+    document.getElementById('main-content').style.display = 'block';
+});
+
 
 
 
