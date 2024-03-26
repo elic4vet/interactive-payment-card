@@ -69,16 +69,29 @@ label {
     margin-left: 250px;
     width: 100%;
 }
-
-
 #completed-state {
-    display: none;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
     padding: 2rem;
     border-radius: 5px;
     width: 100%;
     background-color: var(--White);
+}
+
+.icon-complete {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.successful__title {
+    text-transform:  uppercase;
+}
+
+.successful__content {
+    color: var(--Dark-grayish-violet);
 }
 
 /* Card Details */
@@ -262,23 +275,7 @@ input .form-group {
     justify-content: space-between;
     margin: 0 auto;
 }
-
-
-#completed-state {
-    display: none;
-}
-
-#completed-state.active {
-    display: block;
-}
-
-.completed-state {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2rem;
-}
+ 
 
 .attribution {
     font-size: 18px;
