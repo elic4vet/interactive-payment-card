@@ -70,12 +70,15 @@ label {
     width: 100%;
 }
 
-#s3 {
+
+#completed-state {
     display: none;
+    flex-direction: row;
     margin-top: 2rem;
-    color: var(--White);
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 5px;
+    width: 100%;
+    background-color: var(--White);
 }
 
 /* Card Details */
