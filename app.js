@@ -74,7 +74,6 @@ function validateForm() {
     if (!validateCardNumber(cardNumber)) {
         alert("Invalid card number");
         return true;
-        console.log(cardNumber);
     }
 
     if (!validateCardHolderName(cardHolderName)) {
@@ -133,8 +132,9 @@ document.querySelector(".submit").addEventListener("click", (event) => {
     // Check if any fields are invalid
     if (invalidFields.length === 0) {
         // Display the element with ID 's3'
-        document.getElementById('s3').style.display = 'block';
-
+        document.getElementById('completed-state').style.display = 'block';
+        // Hide the element with ID 's2'
+        document.getElementById('main-content').style.display = 'none';
     } else {
         // Display error message listing invalid fields
         alert("Please check the entered information for correctness. Invalid fields: " + invalidFields.join(", "));
