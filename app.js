@@ -154,10 +154,3 @@ document.querySelector(".continue").addEventListener("click", (event) => {
 
 
 
-
-
-
-
-
-
-
