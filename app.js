@@ -150,7 +150,15 @@ document.querySelector(".continue").addEventListener("click", (event) => {
     document.getElementById('completed-state').style.display = 'none';
     // Display the element with ID 's2'
     document.getElementById('main-content').style.display = 'block';
+    resetInputFields();
 });
 
+function resetInputFields() {
+    elements.cardHolderName.input.value = '';
+    elements.cardNumber.input.value = '';
+    elements.expiracyMonth.input.value = '';
+    elements.expiracyYear.input.value = '';
+    elements.cvcCode.input.value = '';
+}
 
 
