@@ -269,6 +269,10 @@ label {
     width: 100px;
 }
 
+.cvc__text {
+    margin-top: 1rem;
+}
+
 input .form-group {
     display: flex;
     flex-direction: row;
