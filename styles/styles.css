@@ -270,7 +270,7 @@ label {
 }
 
 .cvc__text {
-    margin-bottom: 1rem;
+    margin-top: -1rem;
 }
 
 input .form-group {
