@@ -75,7 +75,6 @@ function validateForm() {
     if (!validateCardNumber(cardNumber)) {
         alert("Invalid card number");
         return true;
-        
     }
 
     if (!validateCardHolderName(cardHolderName)) {
@@ -103,18 +102,14 @@ function validateForm() {
 
 document.querySelector(".submit").addEventListener("click", (event) => {
     event.preventDefault();
-
-    // Validate each input field
     const isValidCardNumber = validateCardNumber(elements.cardNumber.input.value);
     const isValidCardHolderName = validateCardHolderName(elements.cardHolderName.input.value);
     const isValidExpiryMonth = validateExpiracyMonth(elements.expiracyMonth.input.value);
     const isValidExpiryYear = validateExpiracyYear(elements.expiracyYear.input.value);
     const isValidCvcCode = validateCvcCode(elements.cvcCode.input.value);
 
-    // Array to hold names of fields that failed validation
     const invalidFields = [];
  
-    // Check each field and collect invalid fields
     if (!isValidCardNumber) {
         invalidFields.push("Card Number");
     }
@@ -131,24 +126,17 @@ document.querySelector(".submit").addEventListener("click", (event) => {
         invalidFields.push("CVC Code");
     }
 
-    // Check if any fields are invalid
     if (invalidFields.length === 0) {
-        // Display the element with ID 's3'
         document.getElementById('completed-state').style.display = 'block';
-        // Hide the element with ID 's2'
         document.getElementById('main-content').style.display = 'none';
     } else {
-        // Display error message listing invalid fields
         alert("Please check the entered information for correctness. Invalid fields: " + invalidFields.join(", "));
     }
 });
 
-
 document.querySelector(".continue").addEventListener("click", (event) => {
     event.preventDefault();
-    // Hide the element with ID 's3'
     document.getElementById('completed-state').style.display = 'none';
-    // Display the element with ID 's2'
     document.getElementById('main-content').style.display = 'block';
 });
 
@@ -166,4 +154,4 @@ function resetInputFields() {
     elements.expiracyYear.input.value = '';
     elements.cvcCode.input.value = '';
 }
-});
+}); 
