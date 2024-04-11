@@ -161,7 +161,7 @@ label {
 
 .backCard p {
     position:absolute;
-    margin-top: 100px;
+    margin-top: 105px;
     margin-left: 500px;
     flex-direction: column;
     justify-content: center;
@@ -267,10 +267,6 @@ label {
 
 #cvc {
     width: 100px;
-}
-
-.cvc__text {
-    margin-top: -2rem;
 }
 
 input .form-group {
