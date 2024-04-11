@@ -150,8 +150,14 @@ document.querySelector(".continue").addEventListener("click", (event) => {
     document.getElementById('completed-state').style.display = 'none';
     // Display the element with ID 's2'
     document.getElementById('main-content').style.display = 'block';
-    resetInputFields();
 });
+
+document.querySelector(".continue").addEventListener("click", (event) => {
+    event.preventDefault();
+    resetInputFields();
+    Object.values(elements).forEach(element => {
+        element.text.textContent = element.initialText;
+    });
 
 function resetInputFields() {
     elements.cardHolderName.input.value = '';
@@ -160,5 +166,4 @@ function resetInputFields() {
     elements.expiracyYear.input.value = '';
     elements.cvcCode.input.value = '';
 }
-
-
+});
